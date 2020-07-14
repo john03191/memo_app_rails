@@ -1,0 +1,6 @@
+<h1>編集ページ</h1>
+<%= @post.content %>
+<%= form_tag("/memo/#{@post.id}", method: :patch) do %> 
+  <input type="text" name="content" maxlength='20'> 
+  <input type="submit" value="更新">
+<% end %>

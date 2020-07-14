@@ -1,0 +1,13 @@
+.notification {
+  .notice {
+    @include flash(blue);
+  }
+
+  .alert {
+    @include flash(orange);
+  }
+  
+  .delete {
+    @include flash(red);
+  }
+}

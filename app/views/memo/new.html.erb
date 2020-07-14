@@ -1,0 +1,5 @@
+<h1>投稿ページ</h1>
+<%= form_tag('/memo', method: :post) do %> 
+  <input type="text" name="content" maxlength='20'> 
+  <input type="submit" value="投稿する">
+<% end %>
